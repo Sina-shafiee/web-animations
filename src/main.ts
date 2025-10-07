@@ -171,3 +171,34 @@ import { gsap } from "gsap";
 // }
 
 // END CHALLANGE 1 ----------------------------------------------
+
+// PROJECT 4 ----------------------------------------------------
+/**
+ * complex timeline animation
+ * using timeline from gsap
+ * using stagger and defaults in timeline
+ * using position parameter in timeline
+ */
+// const headingEl = document.getElementById("heading");
+
+// const tl = gsap.timeline({
+//   defaults: { ease: "power4.inOut", duration: 1 },
+// });
+
+// tl.to(["#fade1", "#fade2", "#fade3"], {
+//   scaleY: 1,
+//   stagger: 0.1,
+// })
+//   .to(headingEl, { opacity: 1, x: 0, ease: "elastic.out(1,.3)" }, "-=0.5")
+//   .to("#fade1", { scaleY: 0, transformOrigin: "top" }, "+=0.5")
+//   .to(
+//     "#fade3",
+//     {
+//       scaleY: 0,
+//       transformOrigin: "bottom",
+//     },
+//     "<"
+//   )
+//   .to("#fade2", { height: "100dvh", ease: "power4.out" }, "-=.7");
+
+// END PROJECT 4 ------------------------------------------------
