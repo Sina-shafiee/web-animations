@@ -126,42 +126,48 @@ import { gsap } from "gsap";
 // END PROJECT 3 ----------------------------------------------
 
 // CHALLANGE 1 --------------------------------------------------
+/**
+ * challange to recreate an animation
+ * using what i learned so far
+ */
 
-const titleEl = document.getElementById("title");
-const lineEl = document.getElementById("line");
-const ballIconEl = document.getElementById("ballIcon");
+// const titleEl = document.getElementById("title");
+// const lineEl = document.getElementById("line");
+// const ballIconEl = document.getElementById("ballIcon");
 
-gsap.set(titleEl, {
-  y: -40,
-  opacity: 0,
-});
-gsap.set(ballIconEl, {
-  yPercent: -200,
-});
-gsap.set(lineEl, {
-  scaleX: 0,
-});
+// gsap.set(titleEl, {
+//   y: -40,
+//   opacity: 0,
+// });
+// gsap.set(ballIconEl, {
+//   yPercent: -200,
+//   rotateZ: -290,
+// });
+// gsap.set(lineEl, {
+//   scaleX: 0,
+// });
 
-gsap.to(ballIconEl, {
-  yPercent: -50,
-  duration: 1.5,
-  ease: "elastic.out(1.4,0.3)",
-  onComplete: revalLineAndTitle,
-});
+// gsap.to(ballIconEl, {
+//   yPercent: -50,
+//   duration: 1.5,
+//   rotateZ: 0,
+//   ease: "elastic.out(1.4,0.3)",
+//   onComplete: revalLineAndTitle,
+// });
 
-function revalLineAndTitle() {
-  gsap.to(titleEl, {
-    y: 0,
-    opacity: 1,
-    ease: "power4.out",
-    duration: 1,
-  });
+// function revalLineAndTitle() {
+//   gsap.to(titleEl, {
+//     y: 0,
+//     opacity: 1,
+//     ease: "power4.out",
+//     duration: 1,
+//   });
 
-  gsap.to(lineEl, {
-    scaleX: "100%",
-    ease: "power4.out",
-    duration: 1.5,
-  });
-}
+//   gsap.to(lineEl, {
+//     scaleX: "100%",
+//     ease: "power4.out",
+//     duration: 1.5,
+//   });
+// }
 
 // END CHALLANGE 1 ----------------------------------------------
