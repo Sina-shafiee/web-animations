@@ -182,14 +182,18 @@ import { gsap } from "gsap";
 // const headingEl = document.getElementById("heading");
 
 // const tl = gsap.timeline({
-//   defaults: { ease: "power4.inOut", duration: 1 },
+//   defaults: { ease: "power4.inOut", duration: 0.5 },
 // });
 
 // tl.to(["#fade1", "#fade2", "#fade3"], {
 //   scaleY: 1,
 //   stagger: 0.1,
 // })
-//   .to(headingEl, { opacity: 1, x: 0, ease: "elastic.out(1,.3)" }, "-=0.5")
+//   .to(
+//     headingEl,
+//     { opacity: 1, x: 0, ease: "elastic.out(1.4,.3)", duration: 2 },
+//     "-=0.5"
+//   )
 //   .to("#fade1", { scaleY: 0, transformOrigin: "top" }, "+=0.5")
 //   .to(
 //     "#fade3",
@@ -199,6 +203,57 @@ import { gsap } from "gsap";
 //     },
 //     "<"
 //   )
-//   .to("#fade2", { height: "100dvh", ease: "power4.out" }, "-=.7");
+//   .to("#fade2", { height: "100dvh", ease: "power4.out" }, "-=.4")
+//   .to(headingEl, { scale: 0.7 }, "<-.2");
 
 // END PROJECT 4 ------------------------------------------------
+
+// PROJECT 5 ----------------------------------------------------
+/**
+ * Animated side Menu
+ */
+// const toggleButton = document.getElementById("menuToggle");
+
+// let isMenuOpen = false;
+
+// const tl = gsap.timeline({
+//   paused: true,
+//   defaults: {
+//     ease: "power4.inOut",
+//     duration: 0.5,
+//   },
+// });
+
+// tl.to("aside", {
+//   width: "244px",
+// })
+//   .to(
+//     "#asideHeading",
+//     {
+//       opacity: 1,
+//       translateX: 0,
+//     },
+//     "<.2"
+//   )
+//   .to(
+//     ".menuItem",
+//     {
+//       opacity: 1,
+//       translateX: 0,
+//       stagger: 0.1,
+//     },
+//     "<"
+//   );
+
+// toggleButton?.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   if (!isMenuOpen) {
+//     tl.play();
+//     isMenuOpen = true;
+//   } else {
+//     isMenuOpen = false;
+//     tl.reverse();
+//   }
+// });
+
+// END PROJECT 5 ------------------------------------------------
